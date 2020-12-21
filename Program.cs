@@ -1,12 +1,17 @@
-﻿using System;
+﻿using Raylib_cs;
+using System;
 
 namespace Assessment
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static int Main()
         {
-            Console.WriteLine("Hello World!");
+            Engine game = new Engine();
+
+            game.Run();
+
+            return 0;
         }
     }
 }
