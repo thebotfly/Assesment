@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Assessment
 {
-    class Matrix3
+   public class Matrix3
     {
         public float m11, m12, m13, m21, m22, m23, m31, m32, m33;
 
@@ -26,9 +26,9 @@ namespace Assessment
         {
             return new Matrix3
                 (
-                (float)Math.Cos(radians), (float)Math.Sin(radians), 1,
+                (float)Math.Cos(radians), (float)Math.Sin(radians), 0,
                 -(float)Math.Sin(radians), (float)Math.Cos(radians), 0,
-                0, 1, 0
+                0, 0, 1
                 );
         }
 
@@ -36,9 +36,9 @@ namespace Assessment
         {
             return new Matrix3
                 (
-                0, 1, position.X,
+                1, 0, position.X,
                 0, 1, position.Y,
-                1, 0, 0
+                0, 0, 1
                 );
         }
 
@@ -46,9 +46,9 @@ namespace Assessment
         {
             return new Matrix3
                 (
-                scale.X, 0, 1,
-                0, scale.Y, 1,
-                1, 0, 0
+                scale.X, 0, 0,
+                0, scale.Y, 0,
+                0, 0, 1
                 );
         }
 

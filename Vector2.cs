@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Assessment
 {
-    class Vector2
+   public class Vector2
     {
         private float _x;
         private float _y;

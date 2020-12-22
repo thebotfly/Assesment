@@ -5,7 +5,7 @@ using Raylib_cs;
 
 namespace Assessment
 {
-    class Sprite
+   public class Sprite
     {
         private Texture2D _texture;
 
@@ -67,7 +67,7 @@ namespace Assessment
             float rotation = (float)Math.Atan2(transform.m21, transform.m11);
 
             //Draw the sprite
-            Raylib.DrawTextureEx(_texture, pos * 32,
+            Raylib.DrawTextureEx(_texture, pos * 35,
                 (float)(rotation * 180.0f / Math.PI), 32, Color.WHITE);
         }
     }
